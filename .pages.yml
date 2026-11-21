@@ -2,6 +2,28 @@ media:
   input: media
   output: /media
 
+  - name: galeri
+    label: Galeri Foto
+    type: file
+    path: content/galeri.json
+    format: json
+    list: true
+    fields:
+      - name: judul
+        label: Judul foto
+        type: string
+      - name: tanggal
+        label: Tanggal kegiatan
+        type: date
+      - name: foto
+        label: Upload foto
+        type: image
+        options:
+          extensions: [jpg, jpeg, png, webp]
+      - name: keterangan
+        label: Keterangan
+        type: text
+        
 content:
   - name: site
     label: Profil Website
